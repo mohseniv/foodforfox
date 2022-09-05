@@ -1,0 +1,176 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.banner{
+    width:100%;
+    height:100vh;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: -2;
+    background-size: cover;
+    filter:contrast(120%);
+
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    Width: 100%;
+    height: 100%;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.315)); 
+    z-index: -1;
+}
+
+.navbar ul{
+float: left;
+margin:20px 40px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin:30px 50px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity:0.7;
+    font-size: 18px;                                                
+    
+}
+
+.navbar ul li a:hover{
+
+    text-shadow:0px 0px 10px rgb(214, 214, 214),
+    0px 0px 20px rgb(224, 224, 224),
+    0px 0px 40px rgb(255, 255, 255),
+
+    0px 0px 60px rgb(255, 255, 255),
+    0px 0px 100px rgb(255, 255, 255);
+    opacity:1;
+    text-decoration: underline;
+
+}
+
+.banner .content{
+    width:600px;
+    height:300px;
+    position: absolute;
+    bottom:100px;
+    left:80px;
+}
+
+.content h1{
+    -webkit-box-reflect: below -23px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    margin:20px 0px;
+}
+
+.content span{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 13px;
+    line-height: 70px;
+    color:white;
+    font-weight:lighter;
+    opacity:0.1;
+
+}
+
+
+
+.light-effect1{
+    animation:1s light-effect1 linear infinite;
+
+    
+}
+.light-effect2{
+    animation:1s light-effect2 linear infinite;
+    
+
+    
+}
+
+@keyframes light-effect1 {
+    
+    0%,50%,60%,100%{
+        text-shadow:none;   
+        color:white;
+        opacity:0.1;
+
+
+    }
+
+   51%,59%{
+ 
+        text-shadow:0px 0px 10px rgb(214, 214, 214),
+        0px 0px 20px rgb(224, 224, 224),
+        0px 0px 40px rgb(255, 255, 255),
+
+        0px 0px 60px rgb(255, 255, 255),
+        0px 0px 100px rgb(255, 255, 255);
+        color:white;
+        opacity:1;
+    }
+
+
+}
+
+@keyframes light-effect2 {
+    
+0%,100%{
+
+    text-shadow:0px 0px 10px rgb(214, 214, 214),
+    0px 0px 20px rgb(224, 224, 224),
+    0px 0px 40px rgb(255, 255, 255),
+
+    0px 0px 60px rgb(255, 255, 255),
+    0px 0px 100px rgb(255, 255, 255);
+    color:white;
+    opacity:1;
+}
+
+}
+
+
+.content button{
+    background: transparent;
+    border-radius: 6px;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight:lighter;
+    padding: 15px 20px;
+    margin: 40px auto;
+    transition: all 100ms;
+    font-size: 18px;
+    cursor: pointer;
+
+
+}
+
+.content button:hover{
+
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  box-shadow: 0px 0px 40px rgb(255, 255, 255);
+  font-weight: bold;
+  border: 1px solid white;
+
+}
+
+.content button:active{
+  transform: translateY(10px);
+
+}
